@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khám Phá Miền Tây</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fffaf2;
+color:#333;
+line-height:1.6;
+}
+
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+header p{
+font-size:25px;
+}
+
+nav{
+background:#0d8a62;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:20px;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+color:#0d8a62;
+margin-bottom:40px;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about img{
+width:500px;
+max-width:100%;
+border-radius:20px;
+}
+
+.about-text{
+flex:1;
+font-size:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#0d8a62;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.food{
+background:#f6fff8;
+}
+
+footer{
+background:#0d8a62;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+button{
+background:#ffcc33;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:30px;
+margin-top:25px;
+cursor:pointer;
+font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div>
+<h1>Khám Phá Miền Tây</h1>
+<p>Vẻ đẹp sông nước • Văn hóa • Ẩm thực</p>
+<button>Bắt Đầu Hành Trình</button>
+</div>
+</header>
+
+<nav>
+<a href="#">Trang Chủ</a>
+<a href="#diadanh">Địa Danh</a>
+<a href="#amthuc">Ẩm Thực</a>
+<a href="#vanhoa">Văn Hóa</a>
+</nav>
+
+<section>
+<h2 class="title">Giới Thiệu Miền Tây</h2>
+
+<div class="about">
+<img src="https://images.unsplash.com/photo-1528127269322-539801943592">
+<div class="about-text">
+Miền Tây Nam Bộ nổi tiếng với sông nước hữu tình,
+chợ nổi nhộn nhịp, vườn trái cây trĩu quả và con người hiền hòa mến khách.
+Đây là vùng đất mang đậm bản sắc văn hóa Nam Bộ.
+</div>
+</div>
+</section>
+
+<section id="diadanh">
+<h2 class="title">Địa Danh Nổi Bật</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Chợ Nổi Cái Răng</h3>
+<p>Biểu tượng văn hóa sông nước Cần Thơ.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c">
+<h3>Rừng Tràm Trà Sư</h3>
+<p>Thiên nhiên xanh mát độc đáo của An Giang.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+<h3>Đồng Tháp Mười</h3>
+<p>Mùa sen nở tuyệt đẹp giữa miền Tây.</p>
+</div>
+
+</div>
+</section>
+
+<section class="food" id="amthuc">
+<h2 class="title">Ẩm Thực Miền Tây</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<h3>Lẩu Mắm</h3>
+<p>Món ăn đậm hương vị miền Tây.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<h3>Bánh Xèo</h3>
+<p>Giòn rụm, thơm ngon đặc trưng Nam Bộ.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<h3>Trái Cây Miệt Vườn</h3>
+<p>Phong phú và ngọt lành quanh năm.</p>
+</div>
+
+</div>
+</section>
+
+<section id="vanhoa">
+<h2 class="title">Văn Hóa Đờn Ca Tài Tử</h2>
+<p style="text-align:center;font-size:22px">
+Nét đẹp nghệ thuật dân gian đặc sắc của vùng Nam Bộ,
+được UNESCO công nhận là di sản văn hóa phi vật thể.
+</p>
+</section>
+
+<footer>
+<h3>Khám Phá Miền Tây © 2026</h3>
+<p>Sông nước hữu tình - Nghĩa tình phương Nam</p>
+</footer>
+
+</body>
+</html>
